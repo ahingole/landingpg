@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+.bimg{
+    width: 100%;
+    height: 100vh;
+    background-image:url(./images/debashis-rc-biswas-dyPFnxxUhYk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.tex h1{
+    font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+
+
+    
+    
+}
+.tex{
+    width: 100%;
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.tex p{
+    font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color:navy;
+    font-weight: 900;
+    /* background-color: black; */
+    /* opacity: 0.4; */
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+   
+}
+.tex a { 
+   
+    font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+
+
+}
+.tex .abc{
+    height: 50px;
+    width: 200px;
+    display: block;
+    color:black;
+    background-color: whitesmoke;
+    /* box-shadow:; */
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    transition: 1.5s;
+}
+.tex .abc:hover{
+    background-color: coral;
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-auto-rows: 200px;
+    background-color: burlywood;
+}
+.col1{
+    grid-column:1/4;
+    background-color: rgb(167, 250, 159);
+    padding: 50px;
+    
+}
+.col2{
+    background-color: cornsilk;
+    grid-column: 1/4;
+    text-align: center;
+    padding: 30px;
+
+}
+.col3{
+    background-color: darkgray;
+    grid-column: 1/2;
+    text-align: center;
+    padding: 30px;
+
+
+}
+.col4{
+    background-color: darkkhaki;
+    grid-column: 2/3;
+    text-align: center;
+    padding: 30px;
+
+}
+.col5{
+    background-color: darkgray;
+    grid-column: 3/4;
+    text-align: center;
+    padding: 30px;
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .tex h1{
+        font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+
+  }
+  .tex p{
+    font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color:black;
+    font-weight: bold;
+    /* background-color: black; */
+    /* opacity: 0.4; */
+    font-size: small;
+}
+   
+.col3{
+    background-color: darkgray;
+    grid-column: 1/4;
+    text-align: center;
+}
+.col4{
+    background-color: darkkhaki;
+    grid-column: 1/4;
+    text-align: center;
+}
+.col5{
+    background-color: darkgray;
+    grid-column: 1/4;
+    text-align: center;
+}
+}
